@@ -5,21 +5,25 @@
     <title>freeCodeCamp - Survey Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </html>
 
 <body>
 
     <div class="container">
         <div class="text-center" id="header">
-            <h1 id="title">freeCodeCamp Survey Form</h1>
-            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <h1 id="title">Inquérito de Avaliação do Serviço</h1>
+            <p id="description">Obrigado pelo tempo expedido para avaliar o nosso serviço</p>
         </div>
 
         <form action="" method="get" id="survey-form">
-            <div class="inputText">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
+            <div class="form-group">
+                <label for="name" id="name-label" class="label">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Insira o nome" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label" class="label">Email</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Insira o email" required />
             </div>
         </form>
     </div>
