@@ -25,6 +25,24 @@
                 <label for="email" id="email-label" class="label">Email</label>
                 <input type="text" name="email" id="email" class="form-control" placeholder="Insira o email" required />
             </div>
+            <div class="form-group">
+                <label for="number" id="number-label" class="label">
+                    Idade
+                    <span class="clue">(opcional)</span>
+                </label>
+                <input type="number" name="age" id="number" min="17" max="99" class="form-control" placeholder="Idade" required />
+            </div>
+            <div class="form-group">
+                <p class="label">Que opção melhor descreve a sua situação?</p>
+                <select id="dropdown" name="role" class="form-control" required="">
+                    <option disabled="" selected="" value="">Selecionar empregabilidade</option>
+                    <option value="student">Estudante</option>
+                    <option value="job">Trabalho por conta de outrém</option>
+                    <option value="learner">Trabalho por conta própria</option>
+                    <option value="preferNo">Prefiro não dizer</option>
+                    <option value="other">Outro</option>
+                </select>
+            </div>
         </form>
     </div>
 

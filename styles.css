@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background: 
@@ -6,23 +10,22 @@ body {
         ), 
         url(images/background.jpg);
         height: 100%;
-        margin: 0;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        color: #ebe5dd;
+        color: #e4e4e4;
         font-size: 1.1rem;
 }
 
-
-
+select {
+    height: 1rem;
+}
 
 .text-center {
     text-align: center;
 }
 
 .container {
-    width: 100%;
     margin: 2.1rem auto 0 auto;
 }
 
@@ -33,15 +36,20 @@ body {
 
 .label {
     display: flex;
-    margin-left: 20px;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
     font-size: 1.15rem;
-    margin-bottom: 0.5rem;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.7rem;
 }
 
 .form-control {
     display: block;
-    width: 90%;
-    height: 2.1rem;
+    width: 100%;
+    height: 2.375rem;
     font-family: "Poppins", sans-serif;;
     font-size: 1rem;
     border-radius: 6px;
@@ -57,25 +65,25 @@ body {
     font-weight: 400;
     margin-bottom: -0.1rem;
     margin-top: 0;
+    line-height: 1.3;
 }
 
 #description {
     margin: 0;
     font-weight: 200;
     font-style: italic;
-    line-height: 1.5; 
+    line-height: 3; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 #survey-form {
     width: 640px;
     margin: 0 auto 0 auto;
-    padding: 1.875rem 1.25rem;
+    padding: 2.5rem;
     border-radius: 0.313rem;
-    display: block;
     background: 
         linear-gradient(
             115deg, rgba(0, 16, 17, 0.65), rgba(5, 37, 40, 0.65)
         );   
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
