@@ -17,8 +17,26 @@ body {
         font-size: 1.1rem;
 }
 
+label {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.15rem;
+}
+
 select {
     height: 1rem;
+}
+
+textarea, button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
 }
 
 .text-center {
@@ -34,7 +52,7 @@ select {
     padding: 0.25rem;
 }
 
-.label {
+.parag {
     display: flex;
     align-items: center;
     margin: 0 0 0.5rem 0;
@@ -43,7 +61,8 @@ select {
 
 .clue {
     margin-left: 0.25rem;
-    font-size: 0.7rem;
+    margin-top: 0.12rem;
+    font-size: 0.8rem;
 }
 
 .form-control {
@@ -55,6 +74,29 @@ select {
     border-radius: 6px;
     padding: 0.25rem 0.75rem;
     margin: 0 auto 0 auto;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #37af65;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 #header {
@@ -77,7 +119,7 @@ select {
 }
 
 #survey-form {
-    width: 640px;
+    width: 800px;
     margin: 0 auto 0 auto;
     padding: 2.5rem;
     border-radius: 0.313rem;

@@ -23,17 +23,17 @@
             </div>
             <div class="form-group">
                 <label for="email" id="email-label" class="label">Email</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Insira o email" required />
+                <input type="email" name="email" id="email" class="form-control" placeholder="Insira o email" required />
             </div>
             <div class="form-group">
                 <label for="number" id="number-label" class="label">
                     Idade
                     <span class="clue">(opcional)</span>
                 </label>
-                <input type="number" name="age" id="number" min="17" max="99" class="form-control" placeholder="Idade" required />
+                <input type="number" name="age" id="number" min="17" max="99" class="form-control" placeholder="Idade" />
             </div>
             <div class="form-group">
-                <p class="label">Que opção melhor descreve a sua situação?</p>
+                <p class="parag">Que opção melhor descreve a sua situação?</p>
                 <select id="dropdown" name="role" class="form-control" required="">
                     <option disabled="" selected="" value="">Selecionar empregabilidade</option>
                     <option value="student">Estudante</option>
@@ -43,6 +43,80 @@
                     <option value="other">Outro</option>
                 </select>
             </div>
+            <div class="form-group">
+                <p class="parag">Recomendaria os serviços dos sTIC a alguém?</p>
+                <label class="label">
+                    <input name="user-recommend" value="sim" type="radio" class="input-radio" checked>
+                    Sim                    
+                </label>
+                <label class="label">
+                    <input name="user-recommend" value="talvez" type="radio" class="input-radio">
+                    Talvez
+                </label>
+                <label class="label">
+                    <input name="user-recommend" value="nao" type="radio" class="input-radio">
+                    Não
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="parag">Na sua opinião, qual é o melhor serviço oferecido pelos sTIC?</p>
+                <select id="dropdown" name="service-opinion" class="form-control" required="">
+                    <option disabled="" selected="" value="">Selecionar um serviço</option>
+                    <option value="helpdesk">Helpdesk</option>
+                    <option value="salas-de-aula">Apoio a salas de aula</option>
+                    <option value="print">Serviço de Impressão</option>
+                    <option value="elearning">eLearning</option>
+                    <option value="wifi">Wi-Fi</option>
+                    <option value="hosting">Serviço de Hosting</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="parag">O que gostaria que fosse melhorado?<span class="clue">(Selecione todas as que sejam aplicáveis)</span></p>
+                <label>
+                    <input name="prefer" value="Atendimento-distancia" type="checkbox" class="input-checkbox">
+                    Atendimento à distância
+                </label>
+                <label>
+                    <input name="prefer" value="Atendimento-presencial" type="checkbox" class="input-checkbox">
+                    Atendimento presencial
+                </label>
+                <label>
+                    <input name="prefer" value="wifi-prefer" type="checkbox" class="input-checkbox">
+                    Wi-Fi
+                </label>
+                <label>
+                    <input name="prefer" value="print-prefer" type="checkbox" class="input-checkbox">
+                    Serviço de impressão
+                </label>
+                <label>
+                    <input name="prefer" value="hosting-prefer" type="checkbox" class="input-checkbox">
+                    Serviço de Hosting
+                </label>
+                <label>
+                    <input name="prefer" value="elearning-prefer" type="checkbox" class="input-checkbox">
+                    eLearning
+                </label>
+                <label>
+                    <input name="prefer" value="software" type="checkbox" class="input-checkbox">
+                    Software disponibilizado
+                </label>
+                <label>
+                    <input name="prefer" value="apoio-sala" type="checkbox" class="input-checkbox">
+                    Apoio de salas de aula
+                </label>
+                <label>
+                    <input name="prefer" value="equipamentos" type="checkbox" class="input-checkbox">
+                    Aquisição de equipamentos
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="parag">Comentários ou sugestões?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Escreva o seu comentário ou sugestão aqui..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
         </form>
     </div>
 
